@@ -33,4 +33,7 @@ public class Product {
     @ManyToOne // Define o relacionamento muitos para um com Store
     @JoinColumn(name = "store_id", nullable = false) // Nome da coluna na tabela Product que referencia a Store
     private Store store; // Referência para a entidade Store
+
+    @ManyToOne
+    private Category category;
 }
